@@ -1,0 +1,63 @@
+<p> learning Badges </p>
+
+
+<div>
+  <span matBadge="7" > Notifications  default position </span>
+</div>
+<div>
+  <span matBadge="7" matBadgePosition="before"> before Notifications </span>
+</div>
+<div>
+  <span matBadge="7" matBadgePosition="after"> after  Notifications </span>
+</div>
+
+<div>
+  <span matBadge="7" matBadgePosition="below before"> below before Notifications </span>
+</div>
+<div>
+  <span matBadge="7" matBadgePosition="below after"> below after  Notifications </span>
+</div>
+<div>
+  <span matBadge="7" matBadgePosition="above before"> above before Notifications </span>
+</div>
+<div>
+  <span matBadge="7" matBadgePosition="above after"> above after  Notifications </span>
+</div>
+<div>--badge size--</div>
+<div>
+  <span matBadge="7" matBadgePosition="above after" matBadgeSize="large"> BadgeSize large Notifications </span>
+</div>
+<div>
+  <span matBadge="7" matBadgePosition="above after" matBadgeSize="small"> BadgeSize small Notifications </span>
+</div>
+<div>
+  <span matBadge="7" matBadgePosition="above after" matBadgeSize="medium"> BadgeSize medium Notifications </span>
+</div>
+
+
+<div>--color -- </div>
+
+<div>
+  <span matBadge="7" matBadgePosition="above after" matBadgeSize="medium" matBadgeColor="primary"> Badge color  Notifications </span>
+</div>
+<div>
+  <span matBadge="7" matBadgePosition="above after" matBadgeSize="medium" matBadgeColor="accent"> Badge color  Notifications </span>
+</div>
+<div>
+  <span matBadge="7" matBadgePosition="above after" matBadgeSize="medium" matBadgeColor="warn"> Badge color  Notifications </span>
+</div>
+
+<div>
+  <span matBadge="7" matBadgePosition="above after" matBadgeSize="medium" matBadgeColor="warn" matBadgeOverlap="false"> Badge color  Notifications </span>
+</div>
+<div>
+  <mat-icon matBadge="9">home</mat-icon>
+</div>
+
+<div>
+  <span [matBadge]="notification1">Notification Dynamic Values </span>
+</div>
+
+<div>
+  <span [matBadge]="notification2" [matBadgeHidden]="notification2 === 0">Notification Dynamic Values </span>
+</div>

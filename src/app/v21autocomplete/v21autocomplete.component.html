@@ -1,0 +1,38 @@
+<!-- <p> normal autocomplete</p>
+<form action="">
+  <mat-form-field>
+    <input type="text" matInput [matAutocomplete]="auto">
+    <mat-autocomplete  #auto = "matAutocomplete" >
+      <mat-option *ngFor="let option of options" [value]="option">
+      {{option }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form> -->
+
+<!-- <p>object options </p>
+<form action="">
+  <mat-form-field>
+    <input type="text" matInput [matAutocomplete]="auto">
+    <mat-autocomplete  #auto = "matAutocomplete" [displayWith] = "displayFn" >
+      <mat-option *ngFor="let option of objectOptions" [value]="option">
+      {{option.name}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form> -->
+
+<p>filtering auto complete </p>
+
+
+
+<form action="">
+  <mat-form-field>
+    <input type="text" matInput [matAutocomplete]="auto" [formControl] = myControl>
+    <mat-autocomplete  #auto = "matAutocomplete" [displayWith] = "displayFn" >
+      <mat-option *ngFor="let option of filterOptions | async" [value]="option">
+      {{option}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

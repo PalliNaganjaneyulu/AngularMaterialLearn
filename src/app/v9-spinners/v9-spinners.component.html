@@ -1,0 +1,26 @@
+<div> learning spinner / mat-progress-spinners/ mat-spinner</div>
+
+<div style="display: flex;">
+  <!-- <div>
+    <mat-progress-spinner value="10"></mat-progress-spinner>
+    <mat-progress-spinner value="70"></mat-progress-spinner>
+    <mat-progress-spinner value="90"></mat-progress-spinner>
+  </div>
+  <div>
+    <mat-spinner color="primary"></mat-spinner>
+  </div>
+  <div>
+    <mat-spinner color="accent"></mat-spinner>
+  </div>
+  <div>
+    <mat-spinner color="warn"></mat-spinner>
+  </div> -->
+  <div>
+    <mat-spinner *ngIf="showSpinner" color="accent"></mat-spinner>
+  <button mat-raised-button color="warn" (click)="onLoadData()"> load Data</button>
+  </div>
+</div>
+
+
+
+

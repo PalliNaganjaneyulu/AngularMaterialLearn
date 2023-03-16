@@ -1,0 +1,25 @@
+<mat-toolbar color="primary" class="nav-bar">
+  <div>Mat Learn</div>
+  <div>
+    <button mat-button>Home</button>
+    <button mat-button>About Us</button>
+    <button mat-button [matMenuTriggerFor]="servicesMenu">services</button>
+    <button mat-button>Contact Us</button>
+    <button mat-button [matMenuTriggerFor]="logoutMenu">logout</button>
+  </div>
+</mat-toolbar>
+
+<mat-menu #servicesMenu="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="frontEndMenu">FrontEnd</button>
+  <button mat-menu-item>BackEnd</button>
+</mat-menu>
+
+<mat-menu #frontEndMenu="matMenu">
+  <button mat-menu-item>Angular</button>
+  <button mat-menu-item>React</button>
+  <button mat-menu-item>Vue</button>
+</mat-menu>
+
+<mat-menu #logoutMenu="matMenu">
+  <button mat-menu-item>Logout-{{userName}}</button>
+</mat-menu>

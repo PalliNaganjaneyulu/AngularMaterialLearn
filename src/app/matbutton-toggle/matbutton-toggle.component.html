@@ -1,0 +1,50 @@
+<h1> learn bitton toggle </h1>
+
+
+<div>
+  <mat-button-toggle #state disableRipple disabled>toggle</mat-button-toggle>
+  {{state.checked}}
+</div>
+
+<h1> group of buttons </h1>
+
+<div>
+  <mat-button-toggle-group #group="matButtonToggleGroup">
+    <mat-button-toggle value="Angular"> Angular </mat-button-toggle>
+    <mat-button-toggle value="React"> React </mat-button-toggle>
+    <mat-button-toggle value="Vue"> Vue </mat-button-toggle>
+    <mat-button-toggle value="Bootstrap"> Bootstrap </mat-button-toggle>
+  </mat-button-toggle-group>
+
+  {{group.value}}
+</div>
+
+<div>
+  <mat-button-toggle-group #group1="matButtonToggleGroup" multiple>
+    <mat-button-toggle value="Angular"> Angular </mat-button-toggle>
+    <mat-button-toggle value="React"> React </mat-button-toggle>
+    <mat-button-toggle value="Vue"> Vue </mat-button-toggle>
+    <mat-button-toggle value="Bootstrap"> Bootstrap </mat-button-toggle>
+  </mat-button-toggle-group>
+  {{group1.value}}
+</div>
+<p> disabled </p>
+<div>
+  <mat-button-toggle-group #group2="matButtonToggleGroup" multiple>
+    <mat-button-toggle value="Angular" disabled> Angular </mat-button-toggle>
+    <mat-button-toggle value="React"> React </mat-button-toggle>
+    <mat-button-toggle value="Vue"> Vue </mat-button-toggle>
+    <mat-button-toggle value="Bootstrap"> Bootstrap </mat-button-toggle>
+  </mat-button-toggle-group>
+  {{group2.value}}
+</div>
+<p> default checked</p>
+<div>
+  <mat-button-toggle-group #group3="matButtonToggleGroup" multiple>
+    <mat-button-toggle value="Angular"> Angular </mat-button-toggle>
+    <mat-button-toggle value="React" > React </mat-button-toggle>
+    <mat-button-toggle value="Vue"> Vue </mat-button-toggle>
+    <mat-button-toggle value="Bootstrap" checked> Bootstrap </mat-button-toggle>
+  </mat-button-toggle-group>
+  {{group3.value}}
+</div>
